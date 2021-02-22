@@ -1,6 +1,6 @@
 {
   "name": "antd-vue-table-saveas-excel",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -42,11 +42,11 @@
     "yorkie": "^2.0.0"
   },
   "bugs": {
-    "url": "https://github.com/EddieUp/antd-table-saveas-excel/issues"
+    "url": "https://github.com/tanghongxin/antd-table-saveas-excel/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EddieUp/antd-table-saveas-excel"
+    "url": "https://github.com/tanghongxin/antd-table-saveas-excel"
   },
   "license": "MIT"
 }

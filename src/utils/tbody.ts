@@ -32,7 +32,7 @@ export function fillAndDrawTbody(
     }
     for (let column of allColumns) {
       const { dataIndex, __cellType__, __numFmt__, __style__ = {} } = column;
-      let value = _.get(data, dataIndex);
+      let value = _.get(data, dataIndex, '');
       const cell = row.addCell();
       let hMerge = 0,
         vMerge = 0;
