@@ -1,5 +1,5 @@
 {
-  "name": "antd-table-saveas-excel",
+  "name": "antd-vue-table-saveas-excel",
   "version": "1.0.13",
   "scripts": {
     "start": "dumi dev",

@@ -7,6 +7,7 @@ export interface IExcelColumn {
   align?: 'left' | 'right' | 'center';
   colSpan?: number;
   render?: (text: any, record: any, index: number) => React.ReactNode | object;
+  customRender?: (text: any, record: any, index: number) => React.ReactNode | object;
   excelRender?: (
     text: any,
     record: any,

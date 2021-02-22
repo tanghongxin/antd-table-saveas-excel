@@ -41,6 +41,8 @@ export function fillAndDrawTbody(
         renderValue = column.excelRender(value, data, index);
       } else if (column.render) {
         renderValue = column.render(value, data, index);
+      } else if (column.customRender) {
+        renderValue = column.customRender(value, data, index);
       }
       if (renderValue) {
         const { children, colSpan, rowSpan, __style__ } = getColumnRenderValue(
