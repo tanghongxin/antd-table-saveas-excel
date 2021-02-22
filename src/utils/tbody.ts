@@ -1,4 +1,5 @@
 import { Sheet } from 'better-xlsx';
+import _ from 'lodash'
 import drawCell from './cell';
 import getColumnRenderValue from './columnRender';
 import {
@@ -31,7 +32,7 @@ export function fillAndDrawTbody(
     }
     for (let column of allColumns) {
       const { dataIndex, __cellType__, __numFmt__, __style__ = {} } = column;
-      let value = data[dataIndex];
+      let value = _.get(data, dataIndex);
       const cell = row.addCell();
       let hMerge = 0,
         vMerge = 0;
@@ -44,6 +45,7 @@ export function fillAndDrawTbody(
       } else if (column.customRender) {
         renderValue = column.customRender(value, data, index);
       }
+      // TODO: customRender 返回 DOM?
       if (renderValue) {
         const { children, colSpan, rowSpan, __style__ } = getColumnRenderValue(
           renderValue,

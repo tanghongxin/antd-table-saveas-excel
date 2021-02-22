@@ -26,7 +26,8 @@
   "dependencies": {
     "@types/file-saver": "^2.0.1",
     "better-xlsx": "^0.7.5",
-    "file-saver": "^2.0.2"
+    "file-saver": "^2.0.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@umijs/preset-react": "1.x",
