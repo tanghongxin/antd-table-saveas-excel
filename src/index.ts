@@ -132,7 +132,7 @@ export class Excel {
   saveAs(name: string, type: 'blob' = 'blob', compress: boolean = true) {
     if (!this.file) return;
     if (type === 'blob') {
-      this.file
+      return this.file
         .saveAs(type, compress)
         .then(data => {
           saveAs(data, name);
